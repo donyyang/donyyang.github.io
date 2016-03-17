@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | donyyang blog</title>
+  <title>js-3种排序算法 | donyyang blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记住我的名字和我给你带来的故事！">
+  <meta name="description" content="面试经常会被问道的排序，话不多说。
+冒泡排序：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2016/03/16/hello-world/index.html">
+<meta property="og:title" content="js-3种排序算法">
+<meta property="og:url" content="http://yoursite.com/2016/03/17/js-3种排序算法/index.html">
 <meta property="og:site_name" content="donyyang blog">
-<meta property="og:description" content="记住我的名字和我给你带来的故事！">
-<meta property="og:updated_time" content="2016-03-17T14:46:46.412Z">
+<meta property="og:description" content="面试经常会被问道的排序，话不多说。
+冒泡排序：">
+<meta property="og:updated_time" content="2016-03-17T14:46:00.806Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="记住我的名字和我给你带来的故事！">
+<meta name="twitter:title" content="js-3种排序算法">
+<meta name="twitter:description" content="面试经常会被问道的排序，话不多说。
+冒泡排序：">
   
     <link rel="alternative" href="/atom.xml" title="donyyang blog" type="application/atom+xml">
   
@@ -222,11 +225,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-js-3种排序算法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/16/hello-world/" class="article-date">
-      <time datetime="2016-03-16T15:03:51.418Z" itemprop="datePublished">2016-03-16</time>
+      <a href="/2016/03/17/js-3种排序算法/" class="article-date">
+      <time datetime="2016-03-17T14:42:11.000Z" itemprop="datePublished">2016-03-17</time>
 </a>
     </div>
   
@@ -239,7 +242,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      js-3种排序算法
     </h1>
   
 
@@ -256,8 +259,11 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>记住我的名字和我给你带来的故事！</p>
-
+        <p>面试经常会被问道的排序，话不多说。</p>
+<h3 id="冒泡排序："><a href="#冒泡排序：" class="headerlink" title="冒泡排序："></a>冒泡排序：</h3><a id="more"></a>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">maopao</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>,len = arr.length;i &lt; len;i++) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> j = <span class="number">0</span>;j &lt; len-i<span class="number">-1</span>;j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>]) &#123;</span><br><span class="line">                    <span class="keyword">var</span> temp = arr[j];</span><br><span class="line">                    arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                    arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> arr = [<span class="number">23</span>,<span class="number">43</span>,<span class="number">12</span>,<span class="number">44</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">13</span>];</span><br></pre></td></tr></table></figure>
+<h3 id="快速排序："><a href="#快速排序：" class="headerlink" title="快速排序："></a>快速排序：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">kuaipai</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr.length &lt; <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> arr;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> middle = <span class="built_in">Math</span>.floor(arr.length/<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">var</span> middleNum = arr.splice(middle,<span class="number">1</span>)[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> left=[ ],right=[ ];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i&lt;arr.length;i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] &lt; middleNum) &#123;</span><br><span class="line">            left.push(arr[i]);</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            right.push(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> kuaipai(left).concat([middleNum],kuaipai(right));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="插入排序："><a href="#插入排序：" class="headerlink" title="插入排序："></a>插入排序：</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">charu</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> j,key,len = arr.length;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i &lt; len;i++) &#123;</span><br><span class="line">        j = i;</span><br><span class="line">        key = arr[j];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span>(--j &gt; <span class="number">-1</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[j] &gt; key) &#123;</span><br><span class="line">                arr[j+<span class="number">1</span>] = arr[j];</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[j+<span class="number">1</span>] = key;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -265,13 +271,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/03/16/hello-world/">Hello World</a></p>
+        <p><span>本文标题:</span><a href="/2016/03/17/js-3种排序算法/">js-3种排序算法</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 donyyang 的个人博客">donyyang</a></p>
-        <p><span>发布时间:</span>2016年03月16日 - 23时03分</p>
+        <p><span>发布时间:</span>2016年03月17日 - 22时42分</p>
         <p><span>最后更新:</span>2016年03月17日 - 22时46分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/03/16/hello-world/" title="Hello World">http://yoursite.com/2016/03/16/hello-world/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/03/16/hello-world/　　作者: donyyang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/17/js-3种排序算法/" title="js-3种排序算法">http://yoursite.com/2016/03/17/js-3种排序算法/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/03/17/js-3种排序算法/　　作者: donyyang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -285,11 +291,17 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/03/17/my-first-blog/">
+                    my first blog
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
                 <a href="/2016/03/17/em的用法/">
                     em的用法
                 </a>
             </div>
-        
         
     </nav>
 
@@ -298,7 +310,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#冒泡排序："><span class="toc-number">1.</span> <span class="toc-text">冒泡排序：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#快速排序："><span class="toc-number">2.</span> <span class="toc-text">快速排序：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插入排序："><span class="toc-number">3.</span> <span class="toc-text">插入排序：</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -360,7 +372,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/03/16/hello-world/" data-title="Hello World" data-url="http://yoursite.com/2016/03/16/hello-world/"></div>
+    <div class="ds-thread" data-thread-key="2016/03/17/js-3种排序算法/" data-title="js-3种排序算法" data-url="http://yoursite.com/2016/03/17/js-3种排序算法/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -384,7 +396,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/03/17/em的用法/" title="上一篇: em的用法">
+            <a href="/2016/03/17/my-first-blog/" title="上一篇: my first blog">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -392,7 +404,9 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/03/17/em的用法/" title="下一篇: em的用法">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
 
