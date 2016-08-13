@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>my first blog | donyyang blog</title>
+  <title>将本的的文件上传到github上 | donyyang blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我不想让我的第一篇博客成为技术博客。so,,,,,请记住我的名字和我给你带来的故事。
-1234var info = &amp;#123;  chinaName  : &quot;杨冬冬&quot;,  englishName : &quot;donyyang&quot;&amp;#125;">
+  <meta name="description" content="虽然目前github有些过时了，人总有些怀旧的。所以顺手写一下，，参考了上传到github">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my first blog">
-<meta property="og:url" content="http://yoursite.com/2016/03/17/my-first-blog/index.html">
+<meta property="og:title" content="将本的的文件上传到github上">
+<meta property="og:url" content="http://yoursite.com/2016/08/13/上传到github上/index.html">
 <meta property="og:site_name" content="donyyang blog">
-<meta property="og:description" content="我不想让我的第一篇博客成为技术博客。so,,,,,请记住我的名字和我给你带来的故事。
-1234var info = &amp;#123;  chinaName  : &quot;杨冬冬&quot;,  englishName : &quot;donyyang&quot;&amp;#125;">
-<meta property="og:updated_time" content="2016-03-17T14:43:34.000Z">
+<meta property="og:description" content="虽然目前github有些过时了，人总有些怀旧的。所以顺手写一下，，参考了上传到github">
+<meta property="og:updated_time" content="2016-08-13T15:26:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my first blog">
-<meta name="twitter:description" content="我不想让我的第一篇博客成为技术博客。so,,,,,请记住我的名字和我给你带来的故事。
-1234var info = &amp;#123;  chinaName  : &quot;杨冬冬&quot;,  englishName : &quot;donyyang&quot;&amp;#125;">
+<meta name="twitter:title" content="将本的的文件上传到github上">
+<meta name="twitter:description" content="虽然目前github有些过时了，人总有些怀旧的。所以顺手写一下，，参考了上传到github">
   
     <link rel="alternative" href="/atom.xml" title="donyyang blog" type="application/atom+xml">
   
@@ -225,11 +222,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-上传到github上" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/17/my-first-blog/" class="article-date">
-      <time datetime="2016-03-17T14:43:26.000Z" itemprop="datePublished">2016-03-17</time>
+      <a href="/2016/08/13/上传到github上/" class="article-date">
+      <time datetime="2016-08-13T15:01:50.000Z" itemprop="datePublished">2016-08-13</time>
 </a>
     </div>
   
@@ -242,7 +239,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      my first blog
+      将本的的文件上传到github上
     </h1>
   
 
@@ -259,8 +256,31 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>我不想让我的第一篇博客成为技术博客。so,,,,,请记住我的名字和我给你带来的故事。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> info = &#123;</span><br><span class="line">  chinaName  : <span class="string">"杨冬冬"</span>,</span><br><span class="line">  englishName : <span class="string">"donyyang"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p>虽然目前github有些过时了，人总有些怀旧的。所以顺手写一下，，参考了<br><a href="http://1ke.co/course/194" target="_blank" rel="external">上传到github</a><br><a id="more"></a></p>
+<p>##1：新建仓库<br>在自己的github上新建一个仓库;</p>
+<p>##2：初始化本地文件夹<br>在本地（自己的电脑）新建一个文件夹。打开gitbash,在这个路径下输入<code>git init</code> 来初始化文件夹，会生成一个隐藏的.git文件。</p>
+<p>##3：配置<code>ssh key</code></p>
+<ul>
+<li><p>如果没配置ssh key 得先配置ssh key：</p>
+<ul>
+<li><p>在<code>git bash</code> 下输入<br><code>ssh-keygen -t rsa -C your_email@youremail.com</code>后面的<code>your_email@youremail.com</code>改为你的邮箱。直接点回车，说明会在默认文件<code>id_rsa</code>上生成ssh key。<br>然后系统要求输入密码，直接按回车表示不设密码。重复密码时也是直接回车，之后提示你ssh key已经生成成功。</p>
+</li>
+<li><p>然后我们进入提示的地址下查看ssh key文件。打开<code>id_rsapub</code>，复制里面的key。里面的key是一对看不懂的字符数字组合，不用管它，直接复制。</p>
+</li>
+<li><p>进入到自己的github下，新增ssh key</p>
+</li>
+<li><p>验证是否成功，在git bash下输入<code>ssh -T git@github.com</code> 回车就会看到：<code>You’ve successfully authenticated, but GitHub does not provide shell access</code> 。这就表示已成功连上github。</p>
+</li>
+</ul>
+</li>
+<li><p>如果有直接跳过此步骤</p>
+</li>
+</ul>
+<p>##4：添加远程地址<br>进入到本地新建的文件夹（也就是自己在里面执行git init命令的文件夹）：添加远程地址：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git remote add origin git@github.com:yourName/yourRepo.git</div></pre></td></tr></table></figure></p>
+<p>后面的yourName和yourRepo表示你再github的用户名和刚才新建的仓库，加完之后进入.git，打开config，这里会多出一个remote “origin”内容，这就是刚才添加的远程地址，也可以直接修改config来配置远程地址。<br>yourName和yourRepo 与github上的对应。然后进行提交上传：</p>
+<p>##5：执行命令<br>将文件夹（git init的那个）里面已有或者新建的文件或者文件夹执行：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git add README（文件夹的名称）</div><div class="line">$ git commit -m <span class="string">"first commit"</span>（提交的记录）</div></pre></td></tr></table></figure></p>
+<p>##6：上传到github上：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git push origin master</div><div class="line">git push命令会将本地仓库推送到远程服务器。</div></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -268,13 +288,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/03/17/my-first-blog/">my first blog</a></p>
+        <p><span>本文标题:</span><a href="/2016/08/13/上传到github上/">将本的的文件上传到github上</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 donyyang 的个人博客">donyyang</a></p>
-        <p><span>发布时间:</span>2016年03月17日 - 22时43分</p>
-        <p><span>最后更新:</span>2016年03月17日 - 22时43分</p>
+        <p><span>发布时间:</span>2016年08月13日 - 23时01分</p>
+        <p><span>最后更新:</span>2016年08月13日 - 23时26分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/03/17/my-first-blog/" title="my first blog">http://yoursite.com/2016/03/17/my-first-blog/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/03/17/my-first-blog/　　作者: donyyang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/08/13/上传到github上/" title="将本的的文件上传到github上">http://yoursite.com/2016/08/13/上传到github上/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/13/上传到github上/　　作者: donyyang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -287,16 +307,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/03/17/hello-world/">
-                    Hello World
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/03/17/js-3种排序算法/">
-                    js-3种排序算法
+                <a href="/2016/03/17/hello-world/">
+                    Hello World
                 </a>
             </div>
         
@@ -369,7 +383,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/03/17/my-first-blog/" data-title="my first blog" data-url="http://yoursite.com/2016/03/17/my-first-blog/"></div>
+    <div class="ds-thread" data-thread-key="2016/08/13/上传到github上/" data-title="将本的的文件上传到github上" data-url="http://yoursite.com/2016/08/13/上传到github上/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -393,15 +407,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/03/17/hello-world/" title="上一篇: Hello World">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/03/17/js-3种排序算法/" title="下一篇: js-3种排序算法">
+            <a href="/2016/03/17/hello-world/" title="下一篇: Hello World">
                 <i class="fa fa-angle-right"></i>
             </a>
         
