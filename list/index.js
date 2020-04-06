@@ -4,7 +4,11 @@ var obj = {
   },
   tab: function () {
     $('.noMore').on('click', function () {
+      var index = $(this).index();
       $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+      $(".list-content").hide();
+      console.log(index);
+      $(".list-content").eq(index).show();
     });
 
     var $iosActionsheet = $('#iosActionsheet');
