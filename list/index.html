@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>tags | donyyang blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- <meta name="description">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="tags">
+  <meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta property="og:site_name" content="donyyang blog">
+  <meta property="og:description">
+  <meta property="og:updated_time" content="2016-03-06T17:06:05.341Z">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="tags">
+  <meta name="twitter:description"> -->
+  <link rel="alternative" href="/atom.xml" title="donyyang blog" type="application/atom+xml">
+  <link rel="icon" href="/img/body.jpeg">
+  <!-- <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css"> -->
+  <!-- <link href="//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css" rel="stylesheet"> -->
+  <!-- <link rel="stylesheet" href="../css/style.css"> -->
+  <!-- <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"> -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- <link rel="stylesheet" href="../fancybox/jquery.fancybox.css"> -->
+  <!-- <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script> -->
+  <link rel="stylesheet" href="./weui.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./zepto.min.js"></script>
+  <!-- <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script> -->
+  <!-- <script>
+    var yiliaConfig = {
+      fancybox: false,
+      animate: false,
+      isHome: false,
+      isPost: false,
+      isArchive: false,
+      isTag: false,
+      isCategory: false,
+      open_in_new: false,
+    }
+  </script>
+  <script>
+    yiliaConfig.rootUrl = "/";
+  </script> -->
+</head>
+
+<body>
+  <div class="page">
+    <div class="page__bd" style="height: 100%;">
+      <div class="weui-tab">
+        <div class="weui-tab__panel">
+
+        </div>
+        <div class="weui-navbar">
+          <div class="noMore weui-navbar__item weui-bar__item_on">最新活动</div>
+          <div class="noMore weui-navbar__item">商品介绍</div>
+          <div class="noMore weui-navbar__item">在线客服</div>
+          <div id="showIOSActionSheet" class="noMore weui-navbar__item">
+              <img class="more-icon" src="https://weui.io/images/icon_nav_form.png" alt="">
+              更多
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="weui-mask" id="iosMask" style="display: none;"></div>
+    <div class="weui-actionsheet" id="iosActionsheet">
+      <div class="weui-actionsheet__title">
+        <p class="weui-actionsheet__title-text">最新活动</p>
+      </div>
+      <div class="weui-actionsheet__menu">
+        <div class="weui-actionsheet__cell">示例菜单</div>
+        <div class="weui-actionsheet__cell">示例菜单</div>
+        <div class="weui-actionsheet__cell weui-actionsheet__cell_warn">负向菜单</div>
+      </div>
+      <div class="weui-actionsheet__action">
+        <div class="weui-actionsheet__cell" id="iosActionsheetCancel">取消</div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <!-- <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script> -->
+  <!-- <script>
+    $(document).ready(function () {
+      var iPad = window.navigator.userAgent.indexOf('iPad');
+      if (iPad > -1 || $(".left-col").css("display") === "none") {
+        var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390",
+          "#996731"
+        ];
+        var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+        $("body").css({
+          "background-color": bgColorList[bgColor],
+          "background-size": "cover"
+        });
+      } else {
+        var backgroundnum = 5;
+        var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+        $("body").css({
+          "background": backgroundimg,
+          "background-attachment": "fixed",
+          "background-size": "cover"
+        });
+      }
+    })
+  </script> -->
+  <!-- <script src="//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  </div>
+</body>
+
+</html>
